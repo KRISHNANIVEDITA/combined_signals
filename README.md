@@ -22,5 +22,5 @@ mkdir build
 ./INSTALL.sh 1
 
 PREREQUISITES:
-MARES
+MARES,
 CORSIKA 
