@@ -5,12 +5,12 @@ zens=(0)                  # Zenith angles
 azs=(0)                    # Azimuth angles
 iters=(1 2 3)              # Iterations (if needed later)
 energy=(1000000000)         # Energy
-base_dir="/user/knivedita/airtoice/make_corsika/"
+base_dir="/path to where to you want to store input file and reas file for sims/"
 
-template_file="$base_dir/c3e17.0z10a0/RUN000001.inp"   # Template RUN.inp
-reas_template="$base_dir/c3e17.0z10a0/SIM000001.reas"  # Template REAS file
+template_file="$base_dir/[name]/RUN000001.inp"   # Template RUN.inp
+reas_template="$base_dir/[name]/SIM000001.reas"  # Template REAS file
 
-storage_dir="/pnfs/iihe/radar/store/user/knivedita/RET/airshowers/"
+storage_dir="//path to where to you want to store outputs/"
 
 # --- Initialize RUNNR ---
 runnr=1
