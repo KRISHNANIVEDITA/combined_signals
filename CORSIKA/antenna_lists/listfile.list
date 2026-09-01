@@ -1,1 +1,4 @@
-
+# add antenna positions
+AntennaPosition = 3484.1 -2684.8 319000 ch0
+AntennaPosition = -1036.7 0.0 319000 ch1
+AntennaPosition = 3510.3 2619.1 319000 ch2
