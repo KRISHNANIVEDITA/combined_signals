@@ -1,5 +1,5 @@
 # Executable: your bash script
-executable = /user/knivedita/airtoice/create_MARES/create_mares_l1.sh
+executable = create_mares.sh
 
 requirements = TARGET.OpSysAndVer == "AlmaLinux9"
 
@@ -9,8 +9,8 @@ notification   = never
 request_memory = 8000
 
 # Log files
-error  = /pnfs/iihe/radar/store/user/knivedita/RET/mares/high_544/$(LOG_NAME).err
-output = /pnfs/iihe/radar/store/user/knivedita/RET/mares/high_544/$(LOG_NAME).out
+error  = /path/to/$(LOG_NAME).err
+output = /path/to/$(LOG_NAME).out
 
 ######################## SUBMIT ########################
 
