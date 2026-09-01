@@ -1,9 +1,9 @@
 # Should point to your run_corsika.sh executable
-executable = /user/knivedita/airtoice/submit_scripts/run_corsika.sh
+executable = /path/to/run_corsika.sh
 
 # Should point to the directory where you want to store the error files,
 # which will contain possible error messages
-error      = /user/knivedita/airtoice/err/run_corsika_$(LOG_NAME).err
+error      = /path/to/err/run_corsika_$(LOG_NAME).err
 
 getenv         = false
 universe       = vanilla
