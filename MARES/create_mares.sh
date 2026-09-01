@@ -1,6 +1,6 @@
 #!/bin/bash
-# Source to your python
-source /user/knivedita/python-envs/jupyter_env/bin/activate
+# Source to your python environment
+source /path/to/jupyter_env/bin/activate
 name=${1}
 listfile=${2}
 coreas_dir=${3}
@@ -10,7 +10,7 @@ azimuth=${6}
 core_coreas=${7}
 output_dir=${8}
 
-python3 /user/knivedita/airtoice/create_MARES/create_mares.py \
+python3 create_mares.py \
     "$name" \
     "$listfile" \
     "$coreas_dir" \
