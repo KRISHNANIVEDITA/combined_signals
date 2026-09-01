@@ -1,0 +1,21 @@
+# Should point to your make_job_files.sh executable
+executable = /user/knivedita/airtoice/submit_scripts/make_job_files.sh
+
+# Should point to the directory where you want to store the error files,
+# which will contain possible error messages
+error = /user/knivedita/airtoice/err/make_job_files_$(LOG_NAME).err
+
+getenv         = false
+universe       = vanilla
+notification   = never
+request_memory = 1000
+
+########################(drum roll..... SUBMIT!)####################
+
+# Don't forget to specify LOG_NAME when submitting!
+# Submitting is done using the command:
+# condor_submit make_job_files.submit INPUT_FILE="/path/to/input/file" OUTPUT_DIR="/path/to/output/dir/" ZENITH="zenith_value" AZIMUTH="azimuth_value" #CORSIKA_LOG_FILE="/path/to/corsika/log/file" LOG_NAME="log_name" 
+
+Arguments = $(INPUT_FILE) $(OUTPUT_DIR) $(ZENITH) $(AZIMUTH) $(CORSIKA_LOG_FILE) $(LOG_NAME)
+
+queue
