@@ -2,7 +2,7 @@
 
 # Arguments are the corsika input file, the run number (XXXXXX), the atmosphere file, the reas file, the list file and the directory to store all the output files.
 
-run_dir=/software/geant4/faerie_rnog/Greenland/corsika-77500/run/
+run_dir=/path/to/corsika-77500/run/
 
 # Should be the name of the corsika executable in the run directory
 corsika_exec=corsika_QGSJET
