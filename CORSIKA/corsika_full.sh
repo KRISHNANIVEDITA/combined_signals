@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# This file help create large number of CORSIKA showers with diffferent parameters directly, 
+#just remember to sim_dir="XXeYY.0z${zen}a${az}" label the right arrival dirs and energies" 
 # --- User-defined variables ---
 zens=(0)                  # Zenith angles
 azs=(0)                    # Azimuth angles
@@ -23,7 +24,7 @@ for zen in "${zens[@]}"; do
         echo "Zenith: $zen, Azimuth: $az, RUNNR: $runnr"
 
         # Directory names
-        sim_dir="c6e18.0z${zen}a${az}"
+        sim_dir="XXeYY.0z${zen}a${az}"
         local_dir="$base_dir$sim_dir"
         store_dir="$storage_dir/$sim_dir"
 
