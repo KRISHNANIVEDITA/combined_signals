@@ -1,0 +1,20 @@
+# Should point to your run_corsika.sh executable
+executable = /user/knivedita/airtoice/submit_scripts/run_corsika.sh
+
+# Should point to the directory where you want to store the error files,
+# which will contain possible error messages
+error      = /user/knivedita/airtoice/err/run_corsika_$(LOG_NAME).err
+
+getenv         = false
+universe       = vanilla
+notification   = never
+request_memory = 8000
+
+########################(drum roll..... SUBMIT!)####################
+
+# Don't forget to specify LOG_NAME when submitting!
+# Submitting is done using the command:
+# condor_submit run_corsika.submit INPUT_FILE="/path/to/input/file" RUN_NR="XXXXXX" ATMOS_FILE="/path/to/atmos/file" REAS_FILE="/path/to/reas/file" LIST_FILE="/path/to/list/file" OUTPUT_DIR="/path/to/output/dir/" LOG_NAME="log_name"
+
+Arguments = $(INPUT_FILE) $(RUN_NR) $(ATMOS_FILE) $(REAS_FILE) $(LIST_FILE) $(OUTPUT_DIR)
+queue
