@@ -1,0 +1,29 @@
+# Executable: your bash script
+executable = /user/knivedita/airtoice/create_MARES/create_mares_l1.sh
+
+requirements = TARGET.OpSysAndVer == "AlmaLinux9"
+
+universe       = vanilla
+getenv         = false
+notification   = never
+request_memory = 8000
+
+# Log files
+error  = /pnfs/iihe/radar/store/user/knivedita/RET/mares/high_544/$(LOG_NAME).err
+output = /pnfs/iihe/radar/store/user/knivedita/RET/mares/high_544/$(LOG_NAME).out
+
+######################## SUBMIT ########################
+
+# Arguments passed to the bash script
+Arguments = \
+    $(NAME) \
+    $(LISTFILE) \
+    $(COREAS_DIR) \
+    $(ENERGY) \
+    $(ZENITH) \
+    $(AZIMUTH) \
+    $(CORE_COREAS) \
+    $(OUTPUT_DIR)
+
+queue
+
