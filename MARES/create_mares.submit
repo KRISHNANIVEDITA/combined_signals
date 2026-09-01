@@ -1,7 +1,8 @@
 # Executable: your bash script
 executable = create_mares.sh
 
-requirements = TARGET.OpSysAndVer == "AlmaLinux9"
+# any requirements: 
+requirements = 
 
 universe       = vanilla
 getenv         = false
